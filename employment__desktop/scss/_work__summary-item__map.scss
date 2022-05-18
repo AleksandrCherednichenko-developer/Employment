@@ -1,0 +1,208 @@
+.work__summary {
+   .summary__content-left {
+      .items__map {
+         display: none;
+         position: fixed;
+         z-index: 20000;
+         top: 130px;
+         left: 15px;
+         background-color: var(--white);
+         width: 100%;
+         height: auto;
+         max-width: 472px;
+         max-height: calc(97% - 145px);
+         border-radius: 10px;
+         padding: 19px 16px 16px 16px;
+         box-shadow: 1px 2px 8px rgba(54, 94, 125, 0.15);
+
+         .items__map-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 27px;
+            button {
+               display: flex;
+               align-items: center;
+               padding: 7px 12px 7px 15px;
+               background: var(--gray-200);
+               border: none;
+               border-radius: 6px;
+               p {
+                  font-size: 14px;
+                  line-height: 20px;
+                  font-weight: 500;
+                  color: var(--gray-850);
+               }
+               img {
+                  margin-right: 10px;
+               }
+            }
+         }
+         .items__map-wrapper {
+            width: 100%;
+            max-height: 58vh;
+            background-color: var(--white);
+            overflow: auto;
+            padding-right: 10px;
+            &::-webkit-scrollbar {
+               position: absolute;
+               width: 6px;
+            }
+            &::-webkit-scrollbar-track {
+               background-color: var(--white);
+               border-radius: 10px;
+            }
+            &::-webkit-scrollbar-thumb {
+               padding-right: 10px;
+               background: var(--gray-200);
+               border-radius: 10px;
+            }
+            .item__map {
+               border-bottom: 1px solid var(--gray-200);
+               margin-bottom: 16px;
+               &-title {
+                  margin-bottom: 10px;
+               }
+               &-salary {
+                  padding: 4px 8px;
+                  background: var(--gray-200);
+                  border-radius: 6px;
+                  width: max-content;
+                  margin-bottom: 10px;
+               }
+               &-company {
+                  color: var(--gray-800);
+                  margin-bottom: 12px;
+               }
+               &-description {
+                  color: var(--var-850);
+                  margin-bottom: 12px;
+                  height: auto;
+                  overflow: hidden;
+                  line-height: 20px;
+                  text-align: justify;
+                  display: -webkit-box;
+                  -webkit-line-clamp: 7;
+                  -webkit-box-orient: vertical;
+               }
+               &-adress {
+                  display: flex;
+                  margin-bottom: 8px;
+                  .city {
+                     margin-right: 12px;
+                  }
+                  .metro {
+                     display: flex;
+                     align-items: center;
+                     span {
+                        width: 6px;
+                        height: 6px;
+                        border-radius: 50%;
+                        background-color: #e938f9;
+                        margin-right: 4px;
+                     }
+                     a {
+                        margin-left: 3px;
+                        color: var(--orange-600);
+                     }
+                  }
+               }
+               &-date {
+                  margin-bottom: 12px;
+               }
+               &-btn {
+                  position: relative;
+                  display: flex;
+                  align-items: center;
+                  width: 100%;
+                  margin-bottom: 16px;
+                  button {
+                     padding: 7px 12px;
+                     color: var(--white);
+                     background-color: var(--orange-600);
+                     border: none;
+                     border-radius: 4px;
+                     transition: box-shadow 0.3s;
+                     &:hover {
+                        box-shadow: 1px 2px 8px rgba(54, 94, 125, 0.15);
+                     }
+                  }
+                  .call,
+                  .like-row {
+                     position: absolute;
+                     width: 36px;
+                     height: 36px;
+                     cursor: pointer;
+                     outline: 1px solid var(--gray-400);
+                     border-radius: 6px;
+                     -webkit-border-radius: 6px;
+                     -moz-border-radius: 6px;
+                     -ms-border-radius: 6px;
+                     -o-border-radius: 6px;
+                     svg {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                     }
+                  }
+                  .call {
+                     right: 46px;
+                     &:hover {
+                        outline-color: rgba(216, 241, 214, 0.4);
+                        background: rgba(216, 241, 214, 0.4);
+                        svg path {
+                           stroke: var(--emerald-300);
+                        }
+                     }
+                     &.active {
+                        &::before {
+                           content: "";
+                           position: absolute;
+                           z-index: 2;
+                           top: 5px;
+                           left: 25px;
+                           width: 8px;
+                           height: 8px;
+                           background-color: var(--red-400);
+                           border: 1px solid var(--white);
+                           border-radius: 50%;
+                        }
+                     }
+                  }
+                  .like-row {
+                     right: 0px;
+                     &:hover {
+                        outline-color: rgba(236, 95, 107, 0.1);
+                        background: rgba(236, 95, 107, 0.1);
+                        svg path {
+                           stroke: var(--red-500);
+                        }
+                     }
+                     &.active {
+                        svg path {
+                           stroke: var(--red-500);
+                           fill: var(--red-500);
+                        }
+                     }
+                  }
+               }
+            }
+            .item__map-more {
+               width: 100%;
+               height: 40px;
+               padding: 7px 12px;
+               color: var(--gray-850);
+               background-color: var(--gray-200);
+               border: none;
+               border-radius: 4px;
+               margin-bottom: 10px;
+               transition: box-shadow 0.3s;
+               &:hover {
+                  box-shadow: 1px 2px 8px rgba(54, 94, 125, 0.15);
+               }
+            }
+         }
+      }
+   }
+}

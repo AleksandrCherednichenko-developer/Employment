@@ -1,0 +1,271 @@
+.work__summary {
+   .summary__content-left {
+      .items__load {
+         &.collumn {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 11px;
+            .item__wrapper {
+               width: 200px;
+               height: 290px;
+               border: 1px solid var(--gray-200);
+               border-radius: 10px;
+               overflow: hidden;
+               margin-bottom: 24px;
+            }
+            .link {
+               .load__image {
+                  position: relative;
+                  overflow: hidden;
+                  z-index: 3;
+                  max-width: 208px;
+                  width: 100%;
+                  height: 177px;
+                  background-color: var(--gray-400);
+                  .activity {
+                     height: 177px;
+                  }
+               }
+               .info {
+                  padding: 8px;
+                  .load__name,
+                  .load__price,
+                  .load__city,
+                  .load__date {
+                     position: relative;
+                     overflow: hidden;
+                     z-index: 3;
+                     background-color: var(--gray-400);
+                     height: 15px;
+                     margin-bottom: 8px;
+                     border-radius: 4px;
+                  }
+                  .load__name {
+                     width: 90%;
+                  }
+
+                  .load__price {
+                     width: 70px;
+                  }
+
+                  .load__description {
+                     display: none;
+                  }
+
+                  .load__city {
+                     width: 140px;
+                  }
+
+                  .load__date {
+                     width: 110px;
+                  }
+               }
+            }
+            .btn {
+               display: none;
+            }
+            .statistics {
+               display: none;
+            }
+            .activity {
+               position: absolute;
+               left: -45%;
+               top: 0px;
+               height: 20px;
+               width: 45%;
+               animation: loading 2s infinite;
+               z-index: 4;
+               background-image: linear-gradient(
+                  to left,
+                  rgba(251, 251, 251, 0.05),
+                  rgba(251, 251, 251, 0.3),
+                  rgba(251, 251, 251, 0.6),
+                  rgba(251, 251, 251, 0.3),
+                  rgba(251, 251, 251, 0.05)
+               );
+               background-image: -moz-linear-gradient(
+                  to left,
+                  rgba(251, 251, 251, 0.05),
+                  rgba(251, 251, 251, 0.3),
+                  rgba(251, 251, 251, 0.6),
+                  rgba(251, 251, 251, 0.3),
+                  rgba(251, 251, 251, 0.05)
+               );
+               background-image: -webkit-linear-gradient(
+                  to left,
+                  rgba(251, 251, 251, 0.05),
+                  rgba(251, 251, 251, 0.3),
+                  rgba(251, 251, 251, 0.6),
+                  rgba(251, 251, 251, 0.3),
+                  rgba(251, 251, 251, 0.05)
+               );
+            }
+            @keyframes loading {
+               0% {
+                  left: -45%;
+               }
+               100% {
+                  left: 100%;
+               }
+            }
+         }
+
+         &.row {
+            .item__wrapper {
+               width: 100%;
+               height: 250px;
+               border: 1px solid var(--gray-200);
+               border-radius: 10px;
+               overflow: hidden;
+               margin-bottom: 24px;
+               position: relative;
+            }
+            .link {
+               display: flex;
+               padding: 10px 40px 10px 10px;
+               width: 100%;
+               .load__image {
+                  position: relative;
+                  overflow: hidden;
+                  z-index: 3;
+                  max-width: 200px;
+                  min-width: 200px;
+                  height: 174px;
+                  background-color: var(--gray-400);
+                  border-radius: 10px;
+                  margin-right: 24px;
+                  .activity {
+                     height: 174px;
+                  }
+               }
+               .info {
+                  .load__name {
+                     position: relative;
+                     overflow: hidden;
+                     z-index: 3;
+                     background-color: var(--gray-400);
+                     width: 400px;
+                     height: 22px;
+                     margin-bottom: 16px;
+                     border-radius: 4px;
+                  }
+                  .load__price {
+                     position: absolute;
+                     right: 16px;
+                     top: 10px;
+                     overflow: hidden;
+                     z-index: 3;
+                     background-color: var(--gray-400);
+                     width: 60px;
+                     height: 30px;
+                     border-radius: 4px;
+                     .activity {
+                        height: 30px;
+                     }
+                  }
+                  .load__description {
+                     position: relative;
+                     overflow: hidden;
+                     z-index: 3;
+                     background-color: var(--gray-400);
+                     width: 500px;
+                     height: 40px;
+                     margin-bottom: 12px;
+                     border-radius: 4px;
+                     .activity {
+                        height: 40px;
+                     }
+                  }
+                  .load__city {
+                     position: relative;
+                     overflow: hidden;
+                     z-index: 3;
+                     background-color: var(--gray-400);
+                     width: 80%;
+                     min-height: 40px;
+                     margin-bottom: 10px;
+                     border-radius: 4px;
+                     .activity {
+                        height: 40px;
+                     }
+                  }
+                  .load__date {
+                     position: relative;
+                     overflow: hidden;
+                     z-index: 3;
+                     background-color: var(--gray-400);
+                     width: 100px;
+                     min-height: 30px;
+                     border-radius: 4px;
+                     .activity {
+                        height: 30px;
+                     }
+                  }
+               }
+            }
+            .btn {
+               display: flex;
+               position: absolute;
+               left: 234px;
+               bottom: 16px;
+               .load__btn {
+                  position: relative;
+                  overflow: hidden;
+                  z-index: 3;
+                  background-color: var(--gray-400);
+                  width: 122px;
+                  height: 36px;
+                  border-radius: 4px;
+                  margin-right: 16px;
+                  .activity {
+                     height: 36px;
+                  }
+               }
+            }
+            .activity {
+               position: absolute;
+               left: -45%;
+               top: 0px;
+               height: 20px;
+               width: 45%;
+               animation: loading 2s infinite;
+               z-index: 4;
+               background-image: linear-gradient(
+                  to left,
+                  rgba(251, 251, 251, 0.05),
+                  rgba(251, 251, 251, 0.3),
+                  rgba(251, 251, 251, 0.6),
+                  rgba(251, 251, 251, 0.3),
+                  rgba(251, 251, 251, 0.05)
+               );
+               background-image: -moz-linear-gradient(
+                  to left,
+                  rgba(251, 251, 251, 0.05),
+                  rgba(251, 251, 251, 0.3),
+                  rgba(251, 251, 251, 0.6),
+                  rgba(251, 251, 251, 0.3),
+                  rgba(251, 251, 251, 0.05)
+               );
+               background-image: -webkit-linear-gradient(
+                  to left,
+                  rgba(251, 251, 251, 0.05),
+                  rgba(251, 251, 251, 0.3),
+                  rgba(251, 251, 251, 0.6),
+                  rgba(251, 251, 251, 0.3),
+                  rgba(251, 251, 251, 0.05)
+               );
+            }
+            @keyframes loading {
+               0% {
+                  left: -45%;
+               }
+               100% {
+                  left: 100%;
+               }
+            }
+         }
+      }
+   }
+}

@@ -1,0 +1,58 @@
+.categories {
+   position: relative;
+   overflow: hidden;
+   margin-left: 25px;
+   &__slider {
+      display: flex;
+      overflow-x: auto;
+      overflow-y: hidden;
+      padding: 15px 0px 15px 25px;
+      margin-left: 35px;
+      &::-webkit-scrollbar {
+         display: none;
+      }
+   }
+   &__slider-btn {
+      position: absolute;
+      top: 14px;
+      left: 0px;
+      height: 52px;
+      width: 52px;
+      box-shadow: 2px 3px 15px rgba(135, 145, 218, 0.1);
+      background-color: var(--white);
+      border: 1px solid var(--gray-150);
+      border-radius: 8px;
+      background-image: url("data:image/svg+xml,%3Csvg width='18' height='14' viewBox='0 0 18 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.37369 1.59888C5.37369 1.09819 5.77958 0.692302 6.28027 0.692302H16.2526C16.7533 0.692302 17.1592 1.09819 17.1592 1.59888C17.1592 2.09957 16.7533 2.50546 16.2526 2.50546H6.28027C5.77958 2.50546 5.37369 2.09957 5.37369 1.59888ZM0.840805 1.59888C0.840805 0.847847 1.44964 0.239014 2.20067 0.239014C2.9517 0.239014 3.56054 0.847847 3.56054 1.59888C3.56054 2.34991 2.9517 2.95875 2.20067 2.95875C1.44964 2.95875 0.840805 2.34991 0.840805 1.59888ZM0.840805 7.03834C0.840805 6.28731 1.44964 5.67848 2.20067 5.67848C2.9517 5.67848 3.56054 6.28731 3.56054 7.03834C3.56054 7.78938 2.9517 8.39821 2.20067 8.39821C1.44964 8.39821 0.840805 7.78938 0.840805 7.03834ZM0.840805 12.4778C0.840805 11.7268 1.44964 11.1179 2.20067 11.1179C2.9517 11.1179 3.56054 11.7268 3.56054 12.4778C3.56054 13.2288 2.9517 13.8377 2.20067 13.8377C1.44964 13.8377 0.840805 13.2288 0.840805 12.4778ZM5.37369 7.03834C5.37369 6.53766 5.77958 6.13177 6.28027 6.13177H16.2526C16.7533 6.13177 17.1592 6.53766 17.1592 7.03834C17.1592 7.53903 16.7533 7.94492 16.2526 7.94492H6.28027C5.77958 7.94492 5.37369 7.53903 5.37369 7.03834ZM5.37369 12.4778C5.37369 11.9771 5.77958 11.5712 6.28027 11.5712H16.2526C16.7533 11.5712 17.1592 11.9771 17.1592 12.4778C17.1592 12.9785 16.7533 13.3844 16.2526 13.3844H6.28027C5.77958 13.3844 5.37369 12.9785 5.37369 12.4778Z' fill='%23232056'/%3E%3C/svg%3E%0A");
+      background-repeat: no-repeat;
+      background-position: center;
+   }
+   &__slider-item {
+      display: flex;
+      align-items: center;
+      box-shadow: 2px 3px 15px rgba(135, 145, 218, 0.1);
+      border: 1px solid var(--white);
+      border-radius: 8px;
+      padding: 0 18px;
+      height: 50px;
+      margin-right: 5px;
+      &:last-child {
+         margin-right: 25px;
+      }
+      &.active {
+         border: 1px solid var(--orange-500);
+         p {
+            color: var(--orange-700);
+         }
+      }
+      img,
+      svg {
+         width: 25px;
+         height: 25px;
+         margin-right: 12px;
+      }
+      p {
+         color: #767d86;
+         white-space: nowrap;
+      }
+   }
+}

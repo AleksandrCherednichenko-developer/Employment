@@ -1,0 +1,1735 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Employment</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+   <link rel="stylesheet" href="../variables.css">
+   <link rel="stylesheet" href="../components.css">
+   <link rel="stylesheet" href="css/work__style.css">
+   <link rel="stylesheet" href="css/work__media.css">
+</head>
+
+<body>
+
+   <section class="work__info">
+      <div class="container">
+         <div class="work__info-top">
+            <div class="title">
+               <img src="images/work__info/work__info-icon.svg" alt="icon">
+               <div class="title__text">
+                  <h3 class="text-s28-h36-w500">Я работодатель</h3>
+                  <p class="text-s14-h20-w400">Поиск резюме соискателей</p>
+               </div>
+            </div>
+            <div class="btn">
+               <a href="#" class="paid-services text-s14-h20-w500">
+                  <img src="images/work__info/paid-services-icon.svg" alt="icon">
+                  <p>Платные услуги</p>
+               </a>
+               <a href="#" class="summary-user text-s14-h20-w500">
+                  <img src="images/work__info/summary-user-icon.svg" alt="icon">
+                  <p>Мои вакансии</p>
+               </a>
+            </div>
+         </div>
+
+         <div class="work__info-items">
+            <a href="#" class="item">
+               <div class="item__text">
+                  <img src="images/work__info/item-1.svg" alt="images">
+                  <h6 class="text-s18-h22-w500">Новая вакансия</h6>
+                  <p class="text-s12-h16-w400">Опубликуйте вакансию у нас на сайте и вскоре вы получите первые резюме
+                     от будущих сотрудников
+                  </p>
+               </div>
+            </a>
+            <a href="#" class="item">
+               <div class="item__text">
+                  <img src="images/work__info/item-2.svg" alt="" srcset="">
+                  <h6 class="text-s18-h22-w500">Вакансия из шаблона</h6>
+                  <p class="text-s12-h16-w400">Сохраните шаблоны вакансий в личном кабинете и затем создавайте на их
+                     основе новые</p>
+               </div>
+            </a>
+            <a href="#" class="item">
+               <div class="item__text">
+                  <img src="images/work__info/item-3.svg" alt="images">
+                  <h6 class="text-s18-h22-w500">Вакансия с сайта hh.ru</h6>
+                  <p class="text-s12-h16-w400">Просто скопируйте и вставьте вашу ссылку с hh.ru в нашу форму
+                     добавления вакансии</p>
+               </div>
+            </a>
+            <a href="#" class="item">
+               <div class="item__text">
+                  <img src="images/work__info/item-4.svg" alt="images">
+                  <h6 class="text-s18-h22-w500">Вакансия из файла</h6>
+                  <p class="text-s12-h16-w400">Если у вас есть готовый файл вакансии, загрузите его в нашу форму
+                     добавления вакансии</p>
+               </div>
+            </a>
+         </div>
+      </div>
+   </section>
+
+   <article id="work__summary"></article>
+
+   <section class="work__categories">
+      <div class="container">
+         <h4 class="text-s24-h32-w400">Выберите категорию</h4>
+         <div class="categories__slider">
+            <div class="categories__slider-item" data-value='all'>
+               <img src="images/work__categories/icon-all.svg" alt="icon">
+               <p class="text-s16-h22-w400">Все категории</p>
+            </div>
+            <div class="categories__slider-item" data-value='0'>
+               <img src="images/work__categories/icon-0.svg" alt="icon">
+               <p class="text-s16-h22-w400">Авто, сервис, прокат</p>
+            </div>
+            <div class="categories__slider-item" data-value='1'>
+               <img src="images/work__categories/icon-1.svg" alt="icon">
+               <p class="text-s16-h22-w400">Административный персонал</p>
+            </div>
+            <div class="categories__slider-item" data-value='2'>
+               <img src="images/work__categories/icon-2.svg" alt="icon">
+               <p class="text-s16-h22-w400">Банки, инвестиции, лизинг</p>
+            </div>
+            <div class="categories__slider-item" data-value='3'>
+               <img src="images/work__categories/icon-3.svg" alt="icon">
+               <p class="text-s16-h22-w400">Безопасность, охрана</p>
+            </div>
+            <div class="categories__slider-item" data-value='4'>
+               <img src="images/work__categories/icon-4.svg" alt="icon">
+               <p class="text-s16-h22-w400">Бухгалтерия, финансы, аудит</p>
+            </div>
+            <div class="categories__slider-item" data-value='5'>
+               <img src="images/work__categories/icon-5.svg" alt="icon">
+               <p class="text-s16-h22-w400">Высший менеджмент</p>
+            </div>
+            <div class="categories__slider-item" data-value='6'>
+               <img src="images/work__categories/icon-6.svg" alt="icon">
+               <p class="text-s16-h22-w400">Госслужба</p>
+            </div>
+            <div class="categories__slider-item" data-value='7'>
+               <img src="images/work__categories/icon-7.svg" alt="icon">
+               <p class="text-s16-h22-w400">Добыча сырья</p>
+            </div>
+            <div class="categories__slider-item" data-value='8'>
+               <img src="images/work__categories/icon-8.svg" alt="icon">
+               <p class="text-s16-h22-w400">Домашний персонал</p>
+            </div>
+            <div class="categories__slider-item" data-value='9'>
+               <img src="images/work__categories/icon-9.svg" alt="icon">
+               <p class="text-s16-h22-w400">Закупки</p>
+            </div>
+            <div class="categories__slider-item" data-value='10'>
+               <img src="images/work__categories/icon-10.svg" alt="icon">
+               <p class="text-s16-h22-w400">Инсталляция и сервис</p>
+            </div>
+            <div class="categories__slider-item" data-value='11'>
+               <img src="images/work__categories/icon-11.svg" alt="icon">
+               <p class="text-s16-h22-w400">ИТ, интернет, телеком</p>
+            </div>
+            <div class="categories__slider-item" data-value='12'>
+               <img src="images/work__categories/icon-12.svg" alt="icon">
+               <p class="text-s16-h22-w400">Искусство, дизайн, развлечения</p>
+            </div>
+            <div class="categories__slider-item" data-value='13'>
+               <img src="images/work__categories/icon-13.svg" alt="icon">
+               <p class="text-s16-h22-w400">Консультирование</p>
+            </div>
+            <div class="categories__slider-item" data-value='14'>
+               <img src="images/work__categories/icon-14.svg" alt="icon">
+               <p class="text-s16-h22-w400">Маркетинг, реклама, PR</p>
+            </div>
+            <div class="categories__slider-item" data-value='15'>
+               <img src="images/work__categories/icon-15.svg" alt="icon">
+               <p class="text-s16-h22-w400">Медицина, фармацевтика</p>
+            </div>
+            <div class="categories__slider-item" data-value='16'>
+               <img src="images/work__categories/icon-16.svg" alt="icon">
+               <p class="text-s16-h22-w400">Наука, образование</p>
+            </div>
+            <div class="categories__slider-item" data-value='17'>
+               <img src="images/work__categories/icon-17.svg" alt="icon">
+               <p class="text-s16-h22-w400">Начало карьеры, студенты</p>
+            </div>
+            <div class="categories__slider-item" data-value='18'>
+               <img src="images/work__categories/icon-18.svg" alt="icon">
+               <p class="text-s16-h22-w400">Продажи</p>
+            </div>
+            <div class="categories__slider-item" data-value='19'>
+               <img src="images/work__categories/icon-19.svg" alt="icon">
+               <p class="text-s16-h22-w400">Производство, С/Х отрасль</p>
+            </div>
+            <div class="categories__slider-item" data-value='20'>
+               <img src="images/work__categories/icon-20.svg" alt="icon">
+               <p class="text-s16-h22-w400">Рабочий персонал</p>
+            </div>
+            <div class="categories__slider-item" data-value='21'>
+               <img src="images/work__categories/icon-21.svg" alt="icon">
+               <p class="text-s16-h22-w400">Спорт, фитнес, красота</p>
+            </div>
+            <div class="categories__slider-item" data-value='22'>
+               <img src="images/work__categories/icon-22.svg" alt="icon">
+               <p class="text-s16-h22-w400">Страхование</p>
+            </div>
+            <div class="categories__slider-item" data-value='23'>
+               <img src="images/work__categories/icon-23.svg" alt="icon">
+               <p class="text-s16-h22-w400">Строительство, недвижимость, ЖКХ</p>
+            </div>
+            <div class="categories__slider-item" data-value='24'>
+               <img src="images/work__categories/icon-24.svg" alt="icon">
+               <p class="text-s16-h22-w400">Транспорт, логистика, ВЭД</p>
+            </div>
+            <div class="categories__slider-item" data-value="25">
+               <img src="images/work__categories/icon-25.svg" alt="icon">
+               <p class="text-s16-h22-w400">Туризм, рестораны, гостиницы</p>
+            </div>
+            <div class="categories__slider-item" data-value='26'>
+               <img src="images/work__categories/icon-26.svg" alt="icon">
+               <p class="text-s16-h22-w400">Управление персоналом, тренинги</p>
+            </div>
+            <div class="categories__slider-item" data-value='27'>
+               <img src="images/work__categories/icon-27.svg" alt="icon">
+               <p class="text-s16-h22-w400">Юриспруденция</p>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="work__summary">
+      <div class="container">
+         <div class="summary__content">
+            <div class="summary__content-left">
+               <div class="view">
+                  <div class="view__left text-s20-h24-w500">
+                     <p class="all active" data-value="all">Все</p>
+                     <p class="hot" data-value="hot">Горящие</p>
+                     <p class="new" data-value="new">Новые</p>
+                  </div>
+                  <div class="view__right">
+                     <div class="sorting disabled">
+                        <div class="select">
+                           <div class="select__header">
+                              <p class="select__current">По соответствию</p>
+                              <img src="images/work__summary/select__arrow.svg" alt="arrow">
+                           </div>
+                           <div class="select__body">
+                              <div class="select__item active" data-value="by_matching">
+                                 <img src="images/work__summary/select__checked.svg" alt="check">
+                                 По соответствию
+                              </div>
+                              <div class="select__item" data-value="descending_salaries">
+                                 <img src="images/work__summary/select__checked.svg" alt="check">
+                                 По убыванию зарплат
+                              </div>
+                              <div class="select__item" data-value="ascending_salaries">
+                                 <img src="images/work__summary/select__checked.svg" alt="check">
+                                 По возрастанию зарплат
+                              </div>
+                              <div class="select__item" data-value="by_date_of_change">
+                                 <img src="images/work__summary/select__checked.svg" alt="check">
+                                 По дате изменения
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="switch">
+                        <div class="switch-item collumn active" data-value="collumn">
+                           <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <rect x="4.5" y="4.51599" width="6" height="6" rx="1" fill="#606483" />
+                              <rect x="13.5" y="4.51599" width="6" height="6" rx="1" fill="#606483" />
+                              <rect x="4.5" y="13.516" width="6" height="6" rx="1" fill="#606483" />
+                              <rect x="13.5" y="13.516" width="6" height="6" rx="1" fill="#606483" />
+                           </svg>
+                        </div>
+                        <div class="switch-item row" data-value="row">
+                           <svg width="16" height="25" viewBox="0 0 16 25" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <rect x="0.5" y="4.45886" width="15" height="3.57143" rx="1" fill="#606483" />
+                              <rect x="0.5" y="10.2302" width="15" height="3.57143" rx="1" fill="#606483" />
+                              <rect x="0.5" y="16.0017" width="15" height="3.57143" rx="1" fill="#606483" />
+                           </svg>
+                        </div>
+                        <div class="switch-item map" data-value="map">
+                           <svg width="16" height="18" viewBox="0 0 16 18" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                 d="M0.145797 4.09364C-0.000120465 4.21661 -8.43731e-05 4.40356 -0.00012207 4.57527V15.9284C-0.00012207 16.1713 0.193476 16.3529 0.413457 16.3583C0.52722 16.3611 0.624941 16.2888 0.710106 16.2133L3.90412 13.3826C4.11827 13.1928 4.24086 12.9204 4.24086 12.6342V1.80427C4.24086 1.3827 3.75116 1.15025 3.42449 1.41672C2.09344 2.50253 0.264302 3.99377 0.145797 4.09364ZM6.16223 0.852385C5.83568 0.622217 5.39149 0.85868 5.39149 1.25819V12.5382C5.39149 12.8783 5.56438 13.1951 5.85042 13.3792L9.71013 15.8625C10.0429 16.0766 10.4807 15.8377 10.4807 15.442V4.58933C10.4807 4.277 10.3343 3.98235 10.0859 3.79303C8.38554 2.49707 7.24474 1.61541 6.16223 0.852385ZM15.5864 0.7196C15.4726 0.716778 15.3749 0.789141 15.2897 0.864618L12.0957 3.69532C11.8816 3.88512 11.759 4.15756 11.759 4.44371V15.2979C11.759 15.7207 12.251 15.9527 12.5771 15.6837L15.3481 13.3981C15.4267 13.3333 15.5171 13.2847 15.6031 13.23C15.7022 13.1669 15.7878 13.0834 15.8541 12.9843C15.9491 12.8421 15.9999 12.6744 15.9999 12.5027V1.14952C15.9999 0.906579 15.8063 0.725057 15.5864 0.7196Z"
+                                 fill="#606483" />
+                           </svg>
+                        </div>
+                        <div class="switch-slide"></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="main__map" id="map">
+                  <button class="map__search"></button>
+                  <button class="map__full-screen"></button>
+                  <div class="map__scale">
+                     <button class="map__scale-more"></button>
+                     <button class="map__scale-less"></button>
+                  </div>
+                  <button class="map__location"></button>
+               </div>
+               <div class="items collumn">
+                  <a href="#" class="item premium">
+                     <div class="item__image-all">
+                        <div class="item__image">
+                           <img
+                              src="https://n1s1.hsmedia.ru/8b/ed/9e/8bed9e8823819e1cf91c6b685ae98acf/375x225_21_667f09598e129b09b6e6d7c22282aeb5@1080x648_0xac120003_13940243791605083914.jpg"
+                              alt="images">
+                           <img
+                              src="https://n1s1.hsmedia.ru/8b/ed/9e/8bed9e8823819e1cf91c6b685ae98acf/375x225_21_667f09598e129b09b6e6d7c22282aeb5@1080x648_0xac120003_13940243791605083914.jpg"
+                              alt="images">
+                           <img
+                              src="https://n1s1.hsmedia.ru/8b/ed/9e/8bed9e8823819e1cf91c6b685ae98acf/375x225_21_667f09598e129b09b6e6d7c22282aeb5@1080x648_0xac120003_13940243791605083914.jpg"
+                              alt="images">
+                           <img
+                              src="https://n1s1.hsmedia.ru/8b/ed/9e/8bed9e8823819e1cf91c6b685ae98acf/375x225_21_667f09598e129b09b6e6d7c22282aeb5@1080x648_0xac120003_13940243791605083914.jpg"
+                              alt="images">
+                        </div>
+                        <div class="additional__images">
+                           <img src="https://www.sport-interfax.ru/ftproot/photos/photostory/2019/11/13/comedy1_700.jpg"
+                              alt="">
+                           <img
+                              src="https://bipbap.ru/wp-content/uploads/2017/10/59b_depositphotos_125262866_original-640x426.jpg"
+                              alt="">
+                        </div>
+                     </div>
+                     <div class="item__info">
+                        <p class="name text-s16-h22-w500">Менеджер по экономической безопасности</p>
+                        <p class="salary text-s14-h20-w500">80 000 ₽</p>
+                        <p class="description text-s14-h20-w400">Требуется кофе-леди. Нужно уметь регулировать работу
+                           автомата, учитывая
+                           все объективные и субъективные факторы: погоду, влажность, время суток, жирность сливок и
+                           качество помола зерен.</p>
+                        <div class="info__user text-s12-h14-w400">
+                           <p class="experience">Опыт работы: <span>2 года 5 месяцев</span></p>
+                           <p class="age">Возраст: <span>32 года</span></p>
+                        </div>
+                        <div class="summary__info text-s12-h14-w400">
+                           <div class="last-place-of-work">
+                              Лента, федеральная розничная сеть, <span>Май 2013 — Ноябрь 2020</span>
+                           </div>
+                           <div class="position__held">
+                              Менеджер по экономической безопасности
+                           </div>
+                        </div>
+                        <p class="city text-s13-h16-w400">Санкт-Петербург<span class="metro">,
+                              <span></span>Адмиралтейская
+                           </span>
+                        </p>
+                        <div class="last-update text-s13-h16-w400">
+                           <p class="date">4 мая 2021</p>
+                           <p class="time"> в 7:39</p>
+                        </div>
+                        <div class="comment">
+                           <textarea class="comment__text" maxlength='39' placeholder="Моя заметка"></textarea>
+                           <div class="comment__btn">
+                              <button class="comment__btn-save"></button>
+                              <button class="comment__btn-clear"></button>
+                           </div>
+                        </div>
+                        <div class="item__btn">
+                           <button class="item__btn-respond text-s14-h20-w500">Пригласить</button>
+                           <button class="item__btn-hide text-s14-h20-w500">Не показывать</button>
+                        </div>
+                        <div class="call__btn">
+                           <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                 d="M3.13165 7.3573L4.01439 6.90943C4.84312 6.48979 5.86645 6.76381 6.40847 7.5489L7.48512 9.11344C7.95389 9.79465 7.9412 10.6929 7.4517 11.3338L6.0905 13.1176C6.36546 13.9984 6.85219 14.8283 7.54895 15.6076C8.2139 16.3632 9.02985 16.9844 9.94848 17.4345L11.8096 16.4603C12.5158 16.0919 13.3881 16.2279 13.974 16.7976L15.3416 18.1243C16.0239 18.7871 16.1292 19.8436 15.5876 20.597L15.0069 21.4045C14.4291 22.208 13.4629 22.6297 12.4712 22.5098C10.1292 22.2279 7.71409 20.614 5.22511 17.6684C2.73253 14.7181 1.53898 12.056 1.64597 9.685C1.69076 8.68729 2.25541 7.80147 3.13165 7.3573Z"
+                                 stroke="#606483" stroke-width="1.4" stroke-linejoin="round" />
+                              <path
+                                 d="M19.7234 10.3992C19.5905 10.3992 19.4604 10.437 19.3483 10.5082L16.0612 12.5943V11.0992C16.0612 10.7126 15.7478 10.3992 15.3612 10.3992C14.9022 10.3992 14.4686 10.2253 14.1541 9.92593C13.8408 9.62764 13.6716 9.23064 13.6716 8.8244V4.2748C13.6716 3.86857 13.8408 3.47157 14.1541 3.17328C14.4686 2.87387 14.9022 2.7 15.3612 2.7H22.53C22.9889 2.7 23.4225 2.87387 23.737 3.17328C24.0504 3.47157 24.2196 3.86857 24.2196 4.2748V8.8244C24.2196 9.23064 24.0504 9.62764 23.737 9.92593C23.4225 10.2253 22.9889 10.3992 22.53 10.3992H19.7234ZM15.9423 12.785L15.9105 12.805L15.9423 12.785Z"
+                                 stroke="#606483" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                           </svg>
+                        </div>
+                        <div class="like__btn-row">
+                           <svg width="19" height="17" viewBox="0 0 19 17" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                 d="M8.73109 2.38361L9.29538 3.02812L9.85967 2.38361C10.7326 1.38658 12.0803 0.75 13.4783 0.75C15.9468 0.75 17.8408 2.62161 17.8408 4.97254C17.8408 6.42804 17.1747 7.81092 15.8381 9.40021C14.4937 10.9989 12.5561 12.7096 10.1471 14.8343L10.146 14.8353L9.29349 15.5901L8.44424 14.8439C8.44399 14.8437 8.44373 14.8434 8.44348 14.8432C6.03469 12.7141 4.09724 11.0014 2.75278 9.40153C1.41611 7.81096 0.75 6.42805 0.75 4.97254C0.75 2.62161 2.64394 0.75 5.11246 0.75C6.51043 0.75 7.85817 1.38658 8.73109 2.38361Z"
+                                 stroke="#606483" stroke-width="1.5" />
+                           </svg>
+                        </div>
+                        <div class="like__btn-collumn">
+                           <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                 d="M15 7.03666C13.772 5.85275 12.0563 5.12498 10.2725 5.12498C6.77387 5.12498 3.99451 7.80861 3.99451 11.2449C3.99451 13.3449 4.97014 15.209 6.57395 17.1175C8.15917 19.0038 10.4129 20.9958 13.0784 23.3517L13.1456 23.4111L13.1467 23.412L14.67 24.7506L15.0013 25.0417L15.3315 24.7493L16.854 23.4012L16.8548 23.4006L16.894 23.366C19.5714 21.0045 21.8352 19.0079 23.426 17.1163C25.0299 15.2091 26.0055 13.3449 26.0055 11.2449C26.0055 7.80861 23.2261 5.12498 19.7275 5.12498C17.9437 5.12498 16.228 5.85275 15 7.03666Z"
+                                 fill="white" stroke="white" />
+                              <path
+                                 d="M14.4356 8.2546L14.9999 8.89912L15.5642 8.2546C16.569 7.10692 18.1188 6.375 19.7274 6.375C22.5686 6.375 24.7554 8.53145 24.7554 11.2449C24.7554 12.9228 23.9864 14.5076 22.4691 16.3118C20.944 18.1255 18.7477 20.0642 16.0271 22.4637L16.026 22.4647L14.998 23.3749L13.9733 22.4745C13.973 22.4742 13.9726 22.4739 13.9723 22.4736C11.252 20.0693 9.05597 18.1282 7.53078 16.3133C6.01335 14.5076 5.24438 12.9229 5.24438 11.2449C5.24438 8.53145 7.43117 6.375 10.2724 6.375C11.8809 6.375 13.4308 7.10692 14.4356 8.2546Z"
+                                 fill="white" stroke="#606483" stroke-width="1.5" />
+                           </svg>
+                        </div>
+                     </div>
+                  </a>
+                  <a href="#" class="item">
+                     <div class="item__image-all">
+                        <div class="item__image">
+                           <img src="http://uploadrb.ru/upload/photo/365567.jpg" alt="">
+                           <img src="http://uploadrb.ru/upload/photo/365567.jpg" alt="">
+                           <img src="http://uploadrb.ru/upload/photo/365567.jpg" alt="">
+                        </div>
+                     </div>
+                     <div class="item__info">
+                        <p class="name text-s16-h22-w500">Менеджер по экономической безопасности</p>
+                        <p class="salary text-s14-h20-w500">80 000 ₽</p>
+                        <p class="description text-s14-h20-w400">Требуется кофе-леди. Нужно уметь регулировать работу
+                           автомата, учитывая
+                           все объективные и субъективные факторы: погоду, влажность, время суток, жирность сливок и
+                           качество помола зерен.</p>
+                        <div class="info__user text-s12-h14-w400">
+                           <p class="experience">Опыт работы: <span>2 года 5 месяцев</span></p>
+                           <p class="age">Возраст: <span>32 года</span></p>
+                        </div>
+                        <div class="summary__info text-s12-h14-w400">
+                           <div class="last-place-of-work">
+                              Лента, федеральная розничная сеть, <span>Май 2013 — Ноябрь 2020</span>
+                           </div>
+                           <div class="position__held">
+                              Менеджер по экономической безопасности
+                           </div>
+                        </div>
+                        <p class="city text-s13-h16-w400">Санкт-Петербург<span class="metro">,
+                              <span></span>Адмиралтейская
+                           </span>
+                        </p>
+                        <div class="last-update text-s13-h16-w400">
+                           <p class="date">4 мая 2021</p>
+                           <p class="time"> в 7:39</p>
+                        </div>
+                        <div class="comment">
+                           <textarea class="comment__text" maxlength='39' placeholder="Моя заметка"></textarea>
+                           <div class="comment__btn">
+                              <button class="comment__btn-save"></button>
+                              <button class="comment__btn-clear"></button>
+                           </div>
+                        </div>
+                        <div class="item__btn">
+                           <button class="item__btn-respond text-s14-h20-w500">Пригласить</button>
+                           <button class="item__btn-hide text-s14-h20-w500">Не показывать</button>
+                        </div>
+                        <div class="call__btn">
+                           <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                 d="M3.13165 7.3573L4.01439 6.90943C4.84312 6.48979 5.86645 6.76381 6.40847 7.5489L7.48512 9.11344C7.95389 9.79465 7.9412 10.6929 7.4517 11.3338L6.0905 13.1176C6.36546 13.9984 6.85219 14.8283 7.54895 15.6076C8.2139 16.3632 9.02985 16.9844 9.94848 17.4345L11.8096 16.4603C12.5158 16.0919 13.3881 16.2279 13.974 16.7976L15.3416 18.1243C16.0239 18.7871 16.1292 19.8436 15.5876 20.597L15.0069 21.4045C14.4291 22.208 13.4629 22.6297 12.4712 22.5098C10.1292 22.2279 7.71409 20.614 5.22511 17.6684C2.73253 14.7181 1.53898 12.056 1.64597 9.685C1.69076 8.68729 2.25541 7.80147 3.13165 7.3573Z"
+                                 stroke="#606483" stroke-width="1.4" stroke-linejoin="round" />
+                              <path
+                                 d="M19.7234 10.3992C19.5905 10.3992 19.4604 10.437 19.3483 10.5082L16.0612 12.5943V11.0992C16.0612 10.7126 15.7478 10.3992 15.3612 10.3992C14.9022 10.3992 14.4686 10.2253 14.1541 9.92593C13.8408 9.62764 13.6716 9.23064 13.6716 8.8244V4.2748C13.6716 3.86857 13.8408 3.47157 14.1541 3.17328C14.4686 2.87387 14.9022 2.7 15.3612 2.7H22.53C22.9889 2.7 23.4225 2.87387 23.737 3.17328C24.0504 3.47157 24.2196 3.86857 24.2196 4.2748V8.8244C24.2196 9.23064 24.0504 9.62764 23.737 9.92593C23.4225 10.2253 22.9889 10.3992 22.53 10.3992H19.7234ZM15.9423 12.785L15.9105 12.805L15.9423 12.785Z"
+                                 stroke="#606483" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                           </svg>
+                        </div>
+                        <div class="like__btn-row">
+                           <svg width="19" height="17" viewBox="0 0 19 17" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                 d="M8.73109 2.38361L9.29538 3.02812L9.85967 2.38361C10.7326 1.38658 12.0803 0.75 13.4783 0.75C15.9468 0.75 17.8408 2.62161 17.8408 4.97254C17.8408 6.42804 17.1747 7.81092 15.8381 9.40021C14.4937 10.9989 12.5561 12.7096 10.1471 14.8343L10.146 14.8353L9.29349 15.5901L8.44424 14.8439C8.44399 14.8437 8.44373 14.8434 8.44348 14.8432C6.03469 12.7141 4.09724 11.0014 2.75278 9.40153C1.41611 7.81096 0.75 6.42805 0.75 4.97254C0.75 2.62161 2.64394 0.75 5.11246 0.75C6.51043 0.75 7.85817 1.38658 8.73109 2.38361Z"
+                                 stroke="#606483" stroke-width="1.5" />
+                           </svg>
+                        </div>
+                        <div class="like__btn-collumn">
+                           <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                 d="M15 7.03666C13.772 5.85275 12.0563 5.12498 10.2725 5.12498C6.77387 5.12498 3.99451 7.80861 3.99451 11.2449C3.99451 13.3449 4.97014 15.209 6.57395 17.1175C8.15917 19.0038 10.4129 20.9958 13.0784 23.3517L13.1456 23.4111L13.1467 23.412L14.67 24.7506L15.0013 25.0417L15.3315 24.7493L16.854 23.4012L16.8548 23.4006L16.894 23.366C19.5714 21.0045 21.8352 19.0079 23.426 17.1163C25.0299 15.2091 26.0055 13.3449 26.0055 11.2449C26.0055 7.80861 23.2261 5.12498 19.7275 5.12498C17.9437 5.12498 16.228 5.85275 15 7.03666Z"
+                                 fill="white" stroke="white" />
+                              <path
+                                 d="M14.4356 8.2546L14.9999 8.89912L15.5642 8.2546C16.569 7.10692 18.1188 6.375 19.7274 6.375C22.5686 6.375 24.7554 8.53145 24.7554 11.2449C24.7554 12.9228 23.9864 14.5076 22.4691 16.3118C20.944 18.1255 18.7477 20.0642 16.0271 22.4637L16.026 22.4647L14.998 23.3749L13.9733 22.4745C13.973 22.4742 13.9726 22.4739 13.9723 22.4736C11.252 20.0693 9.05597 18.1282 7.53078 16.3133C6.01335 14.5076 5.24438 12.9229 5.24438 11.2449C5.24438 8.53145 7.43117 6.375 10.2724 6.375C11.8809 6.375 13.4308 7.10692 14.4356 8.2546Z"
+                                 fill="white" stroke="#606483" stroke-width="1.5" />
+                           </svg>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               <div class="items__load collumn">
+                  <div class="item__wrapper">
+                     <a class="link" href="#">
+                        <div class="load__image">
+                           <div class="activity"></div>
+                        </div>
+                        <div class="info">
+                           <div class="load__name">
+                              <div class="activity"></div>
+                           </div>
+                           <div class="load__price">
+                              <div class="activity"></div>
+                           </div>
+                           <div class="load__description">
+                              <div class="activity"></div>
+                           </div>
+                           <div class="load__city">
+                              <div class="activity"></div>
+                           </div>
+                           <div class="load__date">
+                              <div class="activity"></div>
+                           </div>
+                        </div>
+                     </a>
+                     <div class="btn">
+                        <div class="load__btn">
+                           <div class="activity"></div>
+                        </div>
+                        <div class="load__btn">
+                           <div class="activity"></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="items__map">
+                  <div class="items__map-info">
+                     <p class="text-s20-h24-w500"><span>73</span> вакансий в этом регионе</p>
+                     <button>
+                        <img src="images/work__summary/filter__btn.svg" alt="images">
+                        <p>Фильтры</p>
+                     </button>
+                  </div>
+                  <div class="items__map-wrapper">
+                     <div class="item__map">
+                        <p class="item__map-title text-s16-h22-w500">Менеджер по экономической безопасности/Ведущий
+                           специалист, специалист
+                           по экономической безопасности</p>
+                        <p class="item__map-salary text-s14-h20-w500">от 80 000 ₽</p>
+                        <p class="item__map-company text-s12-h14-w400">ООО Импорт Хоумм</p>
+                        <p class="item__map-description text-s14-h20-w400">
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, eos sunt. Fugit, doloribus
+                           deleniti. Dolor, itaque modi! Eligendi facilis repudiandae nulla laudantium itaque inventore
+                           ipsum nemo facere cumque deleniti dignissimos numquam molestiae culpa consequuntur aliquam
+                           accusantium eaque quo voluptas, fuga unde animi veritatis perspiciatis quidem! Doloremque
+                           quaerat tenetur nulla quod, aut accusantium minima vel eum. Odio ipsum aut dolores quas qui,
+                           iure deleniti labore, nulla voluptatem voluptatibus vitae dolorum quis cum voluptate beatae,
+                           nemo dolor ratione ducimus ad ullam est reprehenderit. Voluptates nesciunt dolores quos
+                           delectus enim ea quam vero neque? Rerum consectetur saepe esse, in consequatur incidunt
+                           repellat fugiat!
+                        </p>
+                        <div class="item__map-adress text-s12-h14-w400">
+                           <p class="city">Санкт-Петербург</p>
+                           <p class="metro"><span></span>Звенигородская и <a href="#">ещё две</a></p>
+                        </div>
+                        <p class="item__map-date text-s12-h14-w400">14 сентября</p>
+                        <div class="item__map-btn">
+                           <button class="text-s14-h20-w500">Откликнуться</button>
+                           <a class="call" href="tel:+79998887766">
+                              <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <path
+                                    d="M3.13165 7.3573L4.01439 6.90943C4.84312 6.48979 5.86645 6.76381 6.40847 7.5489L7.48512 9.11344C7.95389 9.79465 7.9412 10.6929 7.4517 11.3338L6.0905 13.1176C6.36546 13.9984 6.85219 14.8283 7.54895 15.6076C8.2139 16.3632 9.02985 16.9844 9.94848 17.4345L11.8096 16.4603C12.5158 16.0919 13.3881 16.2279 13.974 16.7976L15.3416 18.1243C16.0239 18.7871 16.1292 19.8436 15.5876 20.597L15.0069 21.4045C14.4291 22.208 13.4629 22.6297 12.4712 22.5098C10.1292 22.2279 7.71409 20.614 5.22511 17.6684C2.73253 14.7181 1.53898 12.056 1.64597 9.685C1.69076 8.68729 2.25541 7.80147 3.13165 7.3573Z"
+                                    stroke="#606483" stroke-width="1.4" stroke-linejoin="round" />
+                                 <path
+                                    d="M19.7234 10.3992C19.5905 10.3992 19.4604 10.437 19.3483 10.5082L16.0612 12.5943V11.0992C16.0612 10.7126 15.7478 10.3992 15.3612 10.3992C14.9022 10.3992 14.4686 10.2253 14.1541 9.92593C13.8408 9.62764 13.6716 9.23064 13.6716 8.8244V4.2748C13.6716 3.86857 13.8408 3.47157 14.1541 3.17328C14.4686 2.87387 14.9022 2.7 15.3612 2.7H22.53C22.9889 2.7 23.4225 2.87387 23.737 3.17328C24.0504 3.47157 24.2196 3.86857 24.2196 4.2748V8.8244C24.2196 9.23064 24.0504 9.62764 23.737 9.92593C23.4225 10.2253 22.9889 10.3992 22.53 10.3992H19.7234Z"
+                                    stroke="#606483" stroke-width="1.4" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                              </svg>
+                           </a>
+                           <div class="like-row">
+                              <svg width="19" height="17" viewBox="0 0 19 17" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <path
+                                    d="M8.73109 2.38361L9.29538 3.02812L9.85967 2.38361C10.7326 1.38658 12.0803 0.75 13.4783 0.75C15.9468 0.75 17.8408 2.62161 17.8408 4.97254C17.8408 6.42804 17.1747 7.81092 15.8381 9.40021C14.4937 10.9989 12.5561 12.7096 10.1471 14.8343L10.146 14.8353L9.29349 15.5901L8.44424 14.8439C8.44399 14.8437 8.44373 14.8434 8.44348 14.8432C6.03469 12.7141 4.09724 11.0014 2.75278 9.40153C1.41611 7.81096 0.75 6.42805 0.75 4.97254C0.75 2.62161 2.64394 0.75 5.11246 0.75C6.51043 0.75 7.85817 1.38658 8.73109 2.38361Z"
+                                    stroke="#606483" stroke-width="1.5" />
+                              </svg>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="item__map">
+                        <p class="item__map-title text-s16-h22-w500">Менеджер по экономической безопасности/Ведущий
+                           специалист, специалист
+                           по экономической безопасности</p>
+                        <p class="item__map-salary text-s14-h20-w500">от 80 000 ₽</p>
+                        <p class="item__map-company text-s12-h14-w400">ООО Импорт Хоумм</p>
+                        <p class="item__map-description text-s14-h20-w400">
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, eos sunt. Fugit, doloribus
+                           deleniti. Dolor, itaque modi! Eligendi facilis repudiandae nulla laudantium itaque inventore
+                           ipsum nemo facere cumque deleniti dignissimos numquam molestiae culpa consequuntur aliquam
+                           accusantium eaque quo voluptas, fuga unde animi veritatis perspiciatis quidem! Doloremque
+                           quaerat tenetur nulla quod, aut accusantium minima vel eum. Odio ipsum aut dolores quas qui,
+                           iure deleniti labore, nulla voluptatem voluptatibus vitae dolorum quis cum voluptate beatae,
+                           nemo dolor ratione ducimus ad ullam est reprehenderit. Voluptates nesciunt dolores quos
+                           delectus enim ea quam vero neque? Rerum consectetur saepe esse, in consequatur incidunt
+                           repellat fugiat!
+                        </p>
+                        <div class="item__map-adress text-s12-h14-w400">
+                           <p class="city">Санкт-Петербург</p>
+                           <p class="metro"><span></span>Звенигородская и <a href="#">ещё две</a></p>
+                        </div>
+                        <p class="item__map-date text-s12-h14-w400">14 сентября</p>
+                        <div class="item__map-btn">
+                           <button class="text-s14-h20-w500">Откликнуться</button>
+                           <a class="call" href="tel:+79998887766">
+                              <svg width="38" height="39" viewBox="0 0 38 39" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <circle cx="19" cy="19.0253" r="19" fill="#EEF2F4" />
+                                 <path
+                                    d="M3 19.0253C3 10.1887 10.1634 3.02527 19 3.02527V3.02527C27.8366 3.02527 35 10.1887 35 19.0253V19.0253C35 27.8618 27.8366 35.0253 19 35.0253V35.0253C10.1634 35.0253 3 27.8618 3 19.0253V19.0253Z"
+                                    fill="#EEF2F4" />
+                                 <path
+                                    d="M9.91531 14.69L10.7 14.2794C11.4366 13.8948 12.3462 14.146 12.828 14.8656L13.7851 16.2998C14.2017 16.9242 14.1905 17.7476 13.7554 18.3351L12.5454 19.9702C12.7898 20.7777 13.2225 21.5384 13.8418 22.2528C14.4329 22.9454 15.1582 23.5149 15.9747 23.9275L17.629 23.0344C18.2568 22.6967 19.0321 22.8214 19.553 23.3436L20.7686 24.5598C21.3751 25.1673 21.4687 26.1357 20.9873 26.8263L20.4711 27.5666C19.9574 28.3032 19.0986 28.6896 18.2171 28.5797C16.1353 28.3214 13.9886 26.842 11.7762 24.1418C9.56054 21.4374 8.4996 18.9971 8.59471 16.8237C8.63451 15.9091 9.13642 15.0971 9.91531 14.69Z"
+                                    stroke="#606483" stroke-width="1.4" stroke-linejoin="round" />
+                                 <path
+                                    d="M24.6632 17.4199C24.5271 17.4199 24.3938 17.4597 24.2799 17.5342L21.4857 19.3629V18.1199C21.4857 17.7333 21.1723 17.4199 20.7857 17.4199C20.4039 17.4199 20.0403 17.2709 19.7741 17.0097C19.5085 16.7488 19.3616 16.3979 19.3616 16.0347V11.8642C19.3616 11.5011 19.5085 11.1501 19.7741 10.8893C20.0403 10.628 20.4039 10.479 20.7857 10.479H27.158C27.5398 10.479 27.9034 10.628 28.1696 10.8893C28.4352 11.1501 28.5821 11.5011 28.5821 11.8642V16.0347C28.5821 16.3979 28.4352 16.7488 28.1696 17.0097C27.9034 17.2709 27.5398 17.4199 27.158 17.4199H24.6632Z"
+                                    stroke="#606483" stroke-width="1.4" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                              </svg>
+                           </a>
+                           <div class="like-row">
+                              <svg width="38" height="39" viewBox="0 0 38 39" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <path
+                                    d="M0 19.0253C0 8.53186 8.50659 0.0252686 19 0.0252686V0.0252686C29.4934 0.0252686 38 8.53186 38 19.0253V19.0253C38 29.5187 29.4934 38.0253 19 38.0253V38.0253C8.50659 38.0253 0 29.5187 0 19.0253V19.0253Z"
+                                    fill="#EEF2F4" />
+                                 <path
+                                    d="M18.4355 14.2597L18.9998 14.9042L19.5641 14.2597C20.4933 13.1984 21.9273 12.5211 23.4151 12.5211C26.0427 12.5211 28.0616 14.5143 28.0616 17.0199C28.0616 18.5703 27.3516 20.0394 25.9379 21.7204C24.5164 23.4108 22.4683 25.2189 19.9264 27.4608L19.9253 27.4618L18.9979 28.2829L18.0738 27.4709C18.0735 27.4706 18.0732 27.4704 18.073 27.4702C15.5312 25.2236 13.4834 23.4134 12.0618 21.7218C10.648 20.0394 9.93799 18.5704 9.93799 17.0199C9.93799 14.5143 11.9569 12.5211 14.5845 12.5211C16.0723 12.5211 17.5063 13.1984 18.4355 14.2597Z"
+                                    stroke="#606483" stroke-width="1.5" />
+                              </svg>
+                           </div>
+                        </div>
+                     </div>
+                     <button class="item__map-more text-s14-h20-w500">Показать еще</button>
+                  </div>
+               </div>
+            </div>
+
+            <div class="summary__content-right">
+               <div class="filter">
+                  <div class="categories__filter">
+                     <p class="text-s14-h18-w400-caps" data-value="all">Все категории</p>
+                     <img src="images/work__summary/filter__btn-icon.svg" alt="btn">
+                  </div>
+                  <div class="specialisation__filter disabled">
+                     <div class="specialisation__filter-top">
+                        <p class="text-s14-h18-w400-caps">Cпециализации</p>
+                     </div>
+                     <div class="specialisation__filter-list">
+                     </div>
+                  </div>
+                  <div class="all__filter">
+                     <div class="region__filter">
+                        <div class="region__filter-top">
+                           <p class="text-s14-h18-w400-caps">Регион</p>
+                           <img src="images/work__summary/filter__btn-icon.svg" alt="btn">
+                        </div>
+                        <div class="region__filter-list">
+                        </div>
+                        <div class="region__filter-checkbox">
+                           <label>
+                              <input type="checkbox">
+                              <span></span>
+                              <p class="text-s13-h16-w400">Поиск по всем регионам</p>
+                           </label>
+                        </div>
+                     </div>
+                     <div class="moving__filter">
+                        <div class="moving__filter-top">
+                           <p class="text-s14-h18-w400-caps">Переезд</p>
+                           <img src="images/work__summary/arrow-filter.svg" alt="btn">
+                        </div>
+                        <div class="moving__filter-list">
+                           <div class="item radio-btn">
+                              <label data-value="1">
+                                 <input type="checkbox">
+                                 <span></span>
+                                 <p>Готов к переезду</p>
+                              </label>
+                           </div>
+                           <div class="item radio-btn">
+                              <label data-value="2">
+                                 <input type="checkbox">
+                                 <span></span>
+                                 <p>Не готов к переезду</p>
+                              </label>
+                           </div>
+                           <div class="item radio-btn">
+                              <label data-value="3">
+                                 <input type="checkbox">
+                                 <span></span>
+                                 <p>Не имеет значения</p>
+                              </label>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="salary__filter">
+                        <div class="salary__filter-top">
+                           <p class="text-s14-h18-w400-caps">Заработная плата, ₽</p>
+                        </div>
+                        <div class="salary__filter-input">
+                           <input type="text" class="from" placeholder="от" pattern="\d*" maxlength="7">
+                           <input type="text" class="up-to" placeholder="до" pattern="\d*" maxlength="7">
+                        </div>
+                        <div class="salary__filter-checkbox">
+                           <label>
+                              <input type="checkbox">
+                              <span></span>
+                              <p class="text-s13-h16-w400">Доход указан</p>
+                           </label>
+                        </div>
+                     </div>
+                     <div class="experience__filter">
+                        <div class="experience__filter-top">
+                           <p class="text-s14-h18-w400-caps">Опыт работы</p>
+                           <img src="images/work__summary/arrow-filter.svg" alt="btn">
+                        </div>
+                        <div class="experience__filter-list">
+                           <div class="item">
+                              <label data-value="1">
+                                 <input type="checkbox">
+                                 <span></span>
+                                 <p>Нет опыта</p>
+                              </label>
+                           </div>
+                           <div class="item">
+                              <label data-value="2">
+                                 <input type="checkbox">
+                                 <span></span>
+                                 <p>От 1 года до 3 лет</p>
+                              </label>
+                           </div>
+                           <div class="item">
+                              <label data-value="3">
+                                 <input type="checkbox">
+                                 <span></span>
+                                 <p>От 3 до 6 лет</p>
+                              </label>
+                           </div>
+                           <div class="item">
+                              <label data-value="4">
+                                 <input type="checkbox">
+                                 <span></span>
+                                 <p>Более 6 лет</p>
+                              </label>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="gender__filter">
+                        <div class="gender__filter-top">
+                           <p class="text-s14-h18-w400-caps">Пол</p>
+                           <img src="images/work__summary/arrow-filter.svg" alt="btn">
+                        </div>
+                        <div class="gender__filter-list">
+                           <div class="item radio-btn">
+                              <label data-value="1">
+                                 <input type="checkbox">
+                                 <span></span>
+                                 <p>Женский</p>
+                              </label>
+                           </div>
+                           <div class="item radio-btn">
+                              <label data-value="2">
+                                 <input type="checkbox">
+                                 <span></span>
+                                 <p>Мужской</p>
+                              </label>
+                           </div>
+                           <div class="item radio-btn">
+                              <label data-value="3">
+                                 <input type="checkbox">
+                                 <span></span>
+                                 <p>Не имеет значения</p>
+                              </label>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="age__filter">
+                        <div class="age__filter-top">
+                           <p class="text-s14-h18-w400-caps">возраст</p>
+                        </div>
+                        <div class="age__filter-input">
+                           <input class="from" type="text" placeholder="от" pattern="\d*" maxlength="2">
+                           <input class="up-to" type="text" placeholder="до" pattern="\d*" maxlength="2">
+                        </div>
+                     </div>
+                     <div class="more__filter">
+                        <div class="employment__filter">
+                           <div class="employment__filter-top">
+                              <p class="text-s14-h18-w400-caps">Тип занятости</p>
+                              <img src="images/work__summary/arrow-filter.svg" alt="btn">
+                           </div>
+                           <div class="employment__filter-list">
+                              <div class="item">
+                                 <label data-value="1">
+                                    <input type="checkbox">
+                                    <span></span>
+                                    <p>Полная занятость</p>
+                                 </label>
+                              </div>
+                              <div class="item">
+                                 <label data-value="2">
+                                    <input type="checkbox">
+                                    <span></span>
+                                    <p>Частичная занятость</p>
+                                 </label>
+                              </div>
+                              <div class="item">
+                                 <label data-value="3">
+                                    <input type="checkbox">
+                                    <span></span>
+                                    <p>Проектная работа</p>
+                                 </label>
+                              </div>
+                              <div class="item">
+                                 <label data-value="4">
+                                    <input type="checkbox">
+                                    <span></span>
+                                    <p>Стажировка</p>
+                                 </label>
+                              </div>
+                              <div class="item">
+                                 <label data-value="5">
+                                    <input type="checkbox">
+                                    <span></span>
+                                    <p>Волонтерство</p>
+                                 </label>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="schedule__filter">
+                           <div class="schedule__filter-top">
+                              <p class="text-s14-h18-w400-caps">График работы</p>
+                              <img src="images/work__summary/arrow-filter.svg" alt="btn">
+                           </div>
+                           <div class="schedule__filter-list">
+                              <div class="item">
+                                 <label data-value="1">
+                                    <input type="checkbox">
+                                    <span></span>
+                                    <p>Полный день</p>
+                                 </label>
+                              </div>
+                              <div class="item">
+                                 <label data-value="2">
+                                    <input type="checkbox">
+                                    <span></span>
+                                    <p>Сменный график</p>
+                                 </label>
+                              </div>
+                              <div class="item">
+                                 <label data-value="3">
+                                    <input type="checkbox">
+                                    <span></span>
+                                    <p>Гибкий график</p>
+                                 </label>
+                              </div>
+                              <div class="item">
+                                 <label data-value="4">
+                                    <input type="checkbox">
+                                    <span></span>
+                                    <p>Удаленная работа</p>
+                                 </label>
+                              </div>
+                              <div class="item">
+                                 <label data-value="5">
+                                    <input type="checkbox">
+                                    <span></span>
+                                    <p>Вахтовый метод</p>
+                                 </label>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="citizenship__filter">
+                           <div class="citizenship__filter-top">
+                              <p class="text-s14-h18-w400-caps">Гражданство</p>
+                              <img src="images/work__summary/arrow-filter.svg" alt="btn">
+                           </div>
+                           <div class="citizenship__filter-list">
+                              <div class="item">
+                                 <label data-value="1">
+                                    <input type="checkbox">
+                                    <span></span>
+                                    <p>Россия</p>
+                                 </label>
+                              </div>
+                              <div class="item">
+                                 <label data-value="2">
+                                    <input type="checkbox">
+                                    <span></span>
+                                    <p>Казахстан</p>
+                                 </label>
+                              </div>
+                              <div class="item">
+                                 <label data-value="3">
+                                    <input type="checkbox">
+                                    <span></span>
+                                    <p>Украина</p>
+                                 </label>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="language__filter">
+                           <div class="language__filter-top">
+                              <p class="text-s14-h18-w400-caps">Знание языков</p>
+                              <img src="images/work__summary/arrow-filter.svg" alt="btn">
+                           </div>
+                           <div class="language__filter-list">
+                              <div class="languages one" data-count="0">
+                                 <div class="select-language">
+                                    <div class="header">
+                                       <p class="header__current" data-value="" data-name="Выберите язык">Выберите
+                                          язык</p>
+                                       <img src="images/work__summary/select__arrow.svg" alt="arrow">
+                                    </div>
+                                    <div class="body">
+                                       <div class="body__item" data-value="english" data-name="Английский">
+                                          Английский
+                                       </div>
+                                       <div class="body__item" data-value="deutsch" data-name="Немецкий">
+                                          Немецкий
+                                       </div>
+                                       <div class="body__item" data-value="chinese" data-name="Китайский">
+                                          Китайский
+                                       </div>
+                                       <div class="body__item" data-value="hindi" data-name="Хинди">
+                                          Хинди
+                                       </div>
+                                       <div class="body__item" data-value="spanish" data-name="Испанский">
+                                          Испанский
+                                       </div>
+                                       <div class="body__item" data-value="russian" data-name="Русский">
+                                          Русский
+                                       </div>
+                                       <div class="body__item" data-value="portuguese" data-name="Португальский">
+                                          Португальский
+                                       </div>
+                                       <div class="body__item" data-value="indonesian" data-name="Индонезийский">
+                                          Индонезийский
+                                       </div>
+                                       <div class="body__item" data-value="arab" data-name="Арабский">
+                                          Арабский
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="select-categories dont-click">
+                                    <div class=" header">
+                                       <p class="header__current" data-value="" data-name="Выберите уровень">
+                                          Выберите уровень</p>
+                                       <img src="images/work__summary/select__arrow.svg" alt="arrow">
+                                    </div>
+                                    <div class="body">
+                                       <div class="body__item" data-value="native" data-name="Родной">
+                                          Родной
+                                       </div>
+                                       <div class="body__item" data-value="a2" data-name="А2 – ниже среднего">
+                                          А2 – ниже среднего
+                                       </div>
+                                       <div class="body__item" data-value="b1" data-name="В1 – средний">
+                                          В1 – средний
+                                       </div>
+                                       <div class="body__item" data-value="b2" data-name="В2 – выше среднего">
+                                          В2 – выше среднего
+                                       </div>
+                                       <div class="body__item" data-value="c1" data-name="C1 – продвинутый">
+                                          C1 – продвинутый
+                                       </div>
+                                       <div class="body__item" data-value="c2"
+                                          data-name="C2 – профессиональный уровень владения">
+                                          C2 – профессиональный уровень владения
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <button class="remove-language">Удалить</button>
+                                 <button class="clear-language">Сбросить</button>
+                              </div>
+                              <button class="add-language dont-click">+Добавить язык</button>
+                           </div>
+                        </div>
+                        <div class="permission__filter">
+                           <div class="permission__filter-top">
+                              <p class="text-s14-h18-w400-caps">Разрешение на работу</p>
+                              <img src="images/work__summary/arrow-filter.svg" alt="btn">
+                           </div>
+                           <div class="permission__filter-list">
+                              <div class="item">
+                                 <label data-value="1">
+                                    <input type="checkbox">
+                                    <span></span>
+                                    <p>Россия</p>
+                                 </label>
+                              </div>
+                              <div class="item">
+                                 <label data-value="2">
+                                    <input type="checkbox">
+                                    <span></span>
+                                    <p>Казахстан</p>
+                                 </label>
+                              </div>
+                              <div class="item">
+                                 <label data-value="3">
+                                    <input type="checkbox">
+                                    <span></span>
+                                    <p>Украина</p>
+                                 </label>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="driver-license__filter">
+                           <div class="driver-license__filter-top">
+                              <p class="text-s14-h18-w400-caps">КАТЕГОРИЯ ПРАВ</p>
+                              <img src="images/work__summary/arrow-filter.svg" alt="btn">
+                           </div>
+                           <div class="driver-license__filter-list">
+                              <div class="item">
+                                 <label data-value="1">
+                                    <input type="checkbox">
+                                    <span></span>
+                                    <p>A</p>
+                                 </label>
+                              </div>
+                              <div class="item">
+                                 <label data-value="2">
+                                    <input type="checkbox">
+                                    <span></span>
+                                    <p>B</p>
+                                 </label>
+                              </div>
+                              <div class="item">
+                                 <label data-value="3">
+                                    <input type="checkbox">
+                                    <span></span>
+                                    <p>C</p>
+                                 </label>
+                              </div>
+                              <div class="item">
+                                 <label data-value="4">
+                                    <input type="checkbox">
+                                    <span></span>
+                                    <p>D</p>
+                                 </label>
+                              </div>
+                              <div class="item">
+                                 <label data-value="5">
+                                    <input type="checkbox">
+                                    <span></span>
+                                    <p>M</p>
+                                 </label>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="additionally__filter">
+                           <div class="additionally__filter-top">
+                              <p class="text-s14-h18-w400-caps">Дополнительно</p>
+                              <img src="images/work__summary/arrow-filter.svg" alt="btn">
+                           </div>
+                           <div class="additionally__filter-list">
+                              <div class="item">
+                                 <label data-value="1">
+                                    <input type="checkbox">
+                                    <span></span>
+                                    <p>Только с фото</p>
+                                 </label>
+                              </div>
+                              <div class="item">
+                                 <label data-value="2">
+                                    <input type="checkbox">
+                                    <span></span>
+                                    <p>Только с автомобилем</p>
+                                 </label>
+                              </div>
+                              <div class="item">
+                                 <label data-value="3">
+                                    <input type="checkbox">
+                                    <span></span>
+                                    <p>Только полный день</p>
+                                 </label>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="publication__filter">
+                        <div class="publication__filter-top">
+                           <p class="text-s14-h18-w400-caps">ВРЕМЯ ПУБЛИКАЦИИ</p>
+                           <img src="images/work__summary/arrow-filter.svg" alt="btn">
+                        </div>
+                        <div class="publication__filter-list">
+                           <div class="item radio-btn">
+                              <label data-value="1">
+                                 <input type="checkbox">
+                                 <span></span>
+                                 <p>За 24 часа</p>
+                              </label>
+                           </div>
+                           <div class="item radio-btn">
+                              <label data-value="2">
+                                 <input type="checkbox">
+                                 <span></span>
+                                 <p>За 7 дней</p>
+                              </label>
+                           </div>
+                           <div class="item radio-btn">
+                              <label data-value="4">
+                                 <input type="checkbox">
+                                 <span></span>
+                                 <p>За месяц</p>
+                              </label>
+                           </div>
+                           <div class="item radio-btn">
+                              <label data-value="3">
+                                 <input type="checkbox">
+                                 <span></span>
+                                 <p>За всё время</p>
+                              </label>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="all__filter-btn">
+                        <button class="more__filter-btn text-s14-h20-w500">Больше фильтров</button>
+                        <button class="apply text-s14-h20-w500">Применить</button>
+                        <a href="#work__summary" class="clear text-s14-h20-w400">Сбросить все фильтры</a>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="popup" id="popupMain">
+                  <div class="popup__categories">
+                     <img src="images/work__summary/close-popup.svg" alt="close" class="close-popup">
+                     <h5 class="text-s28-h36-w500">Выберите основную профобласть</h5>
+                     <ul>
+                        <li data-value="all">
+                           <img src="images/work__categories/icon-all.svg" alt="icon">
+                           <p>Все категории</p>
+                        </li>
+                        <li data-value="0">
+                           <img src="images/work__categories/icon-0.svg" alt="icon">
+                           <p>Авто, сервис, прокат</p>
+                        </li>
+                        <li data-value="1">
+                           <img src="images/work__categories/icon-1.svg" alt="icon">
+                           <p>Администратиивный персонал</p>
+                        </li>
+                        <li data-value="2">
+                           <img src="images/work__categories/icon-2.svg" alt="icon">
+                           <p>Банки, инвестици, лизинг</p>
+                        </li>
+                        <li data-value="3">
+                           <img src="images/work__categories/icon-3.svg" alt="icon">
+                           <p>Безопасность, охрана</p>
+                        </li>
+                        <li data-value="4">
+                           <img src="images/work__categories/icon-4.svg" alt="icon">
+                           <p>Бухгалтерия, финанс, аудит</p>
+                        </li>
+                        <li data-value="5">
+                           <img src="images/work__categories/icon-5.svg" alt="icon">
+                           <p>Высший менеджмент</p>
+                        </li>
+                        <li data-value="6">
+                           <img src="images/work__categories/icon-6.svg" alt="icon">
+                           <p>Госслужба</p>
+                        </li>
+                        <li data-value="7">
+                           <img src="images/work__categories/icon-7.svg" alt="icon">
+                           <p>Добыча сырья</p>
+                        </li>
+                        <li data-value="8">
+                           <img src="images/work__categories/icon-8.svg" alt="icon">
+                           <p>Домашний персонал</p>
+                        </li>
+                        <li data-value="9">
+                           <img src="images/work__categories/icon-9.svg" alt="icon">
+                           <p>Закупки</p>
+                        </li>
+                        <li data-value="10">
+                           <img src="images/work__categories/icon-10.svg" alt="icon">
+                           <p>Инсталляция и сервис</p>
+                        </li>
+                        <li data-value="11">
+                           <img src="images/work__categories/icon-11.svg" alt="icon">
+                           <p>Информационные технологи, интернет, телеком</p>
+                        </li>
+                        <li data-value="12">
+                           <img src="images/work__categories/icon-12.svg" alt="icon">
+                           <p>Искусство, дизай, развлечени</p>
+                        </li>
+                        <li data-value="13">
+                           <img src="images/work__categories/icon-13.svg" alt="icon">
+                           <p>Консультирование</p>
+                        </li>
+                        <li data-value="14">
+                           <img src="images/work__categories/icon-14.svg" alt="icon">
+                           <p>Маркетинг, реклама, PR</p>
+                        </li>
+                        <li data-value="15">
+                           <img src="images/work__categories/icon-15.svg" alt="icon">
+                           <p>Медицина, фармацевтика</p>
+                        </li>
+                        <li data-value="16">
+                           <img src="images/work__categories/icon-16.svg" alt="icon">
+                           <p>Наука, образование</p>
+                        </li>
+                        <li data-value="17">
+                           <img src="images/work__categories/icon-17.svg" alt="icon">
+                           <p>Начало карьер, студенты</p>
+                        </li>
+                        <li data-value="18">
+                           <img src="images/work__categories/icon-18.svg" alt="icon">
+                           <p>Продажи</p>
+                        </li>
+                        <li data-value="19">
+                           <img src="images/work__categories/icon-19.svg" alt="icon">
+                           <p>Производство, СХ отрасль</p>
+                        </li>
+                        <li data-value="20">
+                           <img src="images/work__categories/icon-20.svg" alt="icon">
+                           <p>Рабочий персонал</p>
+                        </li>
+                        <li data-value="21">
+                           <img src="images/work__categories/icon-21.svg" alt="icon">
+                           <p>Спорт, фитнес, красота</p>
+                        </li>
+                        <li data-value="22">
+                           <img src="images/work__categories/icon-22.svg" alt="icon">
+                           <p>Страхование</p>
+                        </li>
+                        <li data-value="23">
+                           <img src="images/work__categories/icon-23.svg" alt="icon">
+                           <p>Строительств, недвижимость, ЖКХ</p>
+                        </li>
+                        <li data-value="24">
+                           <img src="images/work__categories/icon-24.svg" alt="icon">
+                           <p>Транспорт, логистик, ВЭД</p>
+                        </li>
+                        <li data-value="25">
+                           <img src="images/work__categories/icon-25.svg" alt="icon">
+                           <p>Туризм, ресторан, гостиницы</p>
+                        </li>
+                        <li data-value="26">
+                           <img src="images/work__categories/icon-26.svg" alt="icon">
+                           <p>Управление персонало, тренинги</p>
+                        </li>
+                        <li data-value="27">
+                           <img src="images/work__categories/icon-27.svg" alt="icon">
+                           <p>Юриспруденция</p>
+                        </li>
+                     </ul>
+                     <div class="popup__categories-btn">
+                        <button class="clear text-s14-h20-w500" disabled>Сбросить</button>
+                        <button class="next text-s14-h20-w500" disabled>Далее</button>
+                        <button class="search text-s14-h20-w500">Поиск</button>
+                     </div>
+                  </div>
+
+                  <div class="popup__specialisation">
+                     <button class="btn-back"></button>
+                     <img src="images/work__summary/close-popup.svg" alt="close" class="close-popup">
+                     <h5 class="text-s28-h36-w500">Выберите специализацию</h5>
+                     <p class="categories-active"></p>
+                     <ul>
+                        <label>
+                           <input type="checkbox">
+                           <span></span>
+                           <p data-value="1">элемент 1 asdsdasdasdadasdas aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                        </label>
+                        <label>
+                           <input type="checkbox">
+                           <span></span>
+                           <p data-value="2">элемент 2 asdasdsas aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                        </label>
+                        <label>
+                           <input type="checkbox">
+                           <span></span>
+                           <p data-value="3">элемент 3</p>
+                        </label>
+                        <label>
+                           <input type="checkbox">
+                           <span></span>
+                           <p data-value="4">элемент 4 asdsdasdasdadasdas aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                        </label>
+                        <label>
+                           <input type="checkbox">
+                           <span></span>
+                           <p data-value="5">элемент 5 asdasdsas aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                        </label>
+                        <label>
+                           <input type="checkbox">
+                           <span></span>
+                           <p data-value="6">элемент 6</p>
+                        </label>
+                        <label>
+                           <input type="checkbox">
+                           <span></span>
+                           <p data-value="7">элемент 7 asdsdasdasdadasdas aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                        </label>
+                        <label>
+                           <input type="checkbox">
+                           <span></span>
+                           <p data-value="8">элемент 8 asdasdsas aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                        </label>
+                        <label>
+                           <input type="checkbox">
+                           <span></span>
+                           <p data-value="9">элемент 9</p>
+                        </label>
+                        <label>
+                           <input type="checkbox">
+                           <span></span>
+                           <p data-value="10">элемент 10 asdsdasdasdadasdas aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                        </label>
+                        <label>
+                           <input type="checkbox">
+                           <span></span>
+                           <p data-value="11">элемент 11 asdasdsas aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                           </p>
+                        </label>
+                        <label>
+                           <input type="checkbox">
+                           <span></span>
+                           <p data-value="12">элемент 12</p>
+                        </label>
+                        <label>
+                           <input type="checkbox">
+                           <span></span>
+                           <p data-value="13">элемент 13 asdsdasdasdadasdas aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                        </label>
+                        <label>
+                           <input type="checkbox">
+                           <span></span>
+                           <p data-value="14">элемент 14 asdasdsas aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                           </p>
+                        </label>
+                        <label>
+                           <input type="checkbox">
+                           <span></span>
+                           <p data-value="15">элемент 15</p>
+                        </label>
+                        <label>
+                           <input type="checkbox">
+                           <span></span>
+                           <p data-value="16">элемент 16 asdsdasdasdadasdas aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                        </label>
+                        <label>
+                           <input type="checkbox">
+                           <span></span>
+                           <p data-value="17">элемент 17 asdasdsas aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                           </p>
+                        </label>
+                        <label>
+                           <input type="checkbox">
+                           <span></span>
+                           <p data-value="18">элемент 18</p>
+                        </label>
+                        <label>
+                           <input type="checkbox">
+                           <span></span>
+                           <p data-value="19">элемент 19 asdsdasdasdadasdas aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                        </label>
+                        <label>
+                           <input type="checkbox">
+                           <span></span>
+                           <p data-value="20">элемент 20 asdasdsas aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                           </p>
+                        </label>
+                        <label>
+                           <input type="checkbox">
+                           <span></span>
+                           <p data-value="21">элемент 21</p>
+                        </label>
+                        <label>
+                           <input type="checkbox">
+                           <span></span>
+                           <p data-value="18">элемент 18</p>
+                        </label>
+                        <label>
+                           <input type="checkbox">
+                           <span></span>
+                           <p data-value="19">элемент 19 asdsdasdasdadasdas aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                        </label>
+                        <label>
+                           <input type="checkbox">
+                           <span></span>
+                           <p data-value="20">элемент 20 asdasdsas aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                           </p>
+                        </label>
+                        <label>
+                           <input type="checkbox">
+                           <span></span>
+                           <p data-value="21">элемент 21</p>
+                        </label>
+                     </ul>
+                     <div class="popup__specialisation-btn">
+                        <button class="clear text-s14-h20-w500">Сбросить</button>
+                        <button class="search text-s14-h20-w500">Поиск</button>
+                     </div>
+                  </div>
+
+                  <div class="popup__region">
+                     <img src="images/work__summary/close-popup.svg" alt="close" class="close-popup">
+                     <h5 class="text-s28-h36-w500">Выберите регион поиска</h5>
+                     <div class="popup__region-searh">
+                        <input class="search-input" type="text" placeholder="Начните вводить название города">
+                        <div class="search-list">
+                           <p class="item">Москва</p>
+                           <p class="item">Санкт-Петербург</p>
+                           <p class="item">Казань</p>
+                           <p class="item">Владивосток</p>
+                           <p class="item">asdas</p>
+                           <p class="item">Влаasdдивосток</p>
+                           <p class="item">asdasdasdasdasd</p>
+                           <p class="item">zxczxcasd</p>
+                           <p class="item">cxvcvxv</p>
+                           <p class="item">asasdasdasdaddads</p>
+                        </div>
+                        <div class="popup__region-list"></div>
+                     </div>
+                     <div class="popup__region-btn">
+                        <button class="clear text-s14-h20-w500">Сбросить</button>
+                        <button class="search text-s14-h20-w500">Поиск</button>
+                     </div>
+                  </div>
+
+                  <div class="popup__response">
+                     <div class="popup__response-items">
+                        <div class="popup__response-item" data-value="office_interview">
+                           <div class="images">
+                              <img src="images/popup__response/item-2.svg" alt="images">
+                           </div>
+                           <div class="text">
+                              <p class="text__title text-s14-h20-w500">Интервью в офисе</p>
+                              <p class="text__subtitle text-s12-h14-w400">Пригласите кандидата на очное собеседование
+                              </p>
+                           </div>
+                        </div>
+                        <div class="popup__response-item" data-value="test">
+                           <div class="images">
+                              <img src="images/popup__response/item-4.svg" alt="images">
+                           </div>
+                           <div class="text">
+                              <p class="text__title text-s14-h20-w500">Тестовое задание</p>
+                              <p class="text__subtitle text-s12-h14-w400">Предложите кандидату подтвердить свои навыки
+                              </p>
+                           </div>
+                        </div>
+                        <div class="popup__response-item" data-value="exit_to_work">
+                           <div class="images">
+                              <img src="images/popup__response/item-6.svg" alt="images">
+                           </div>
+                           <div class="text">
+                              <p class="text__title text-s14-h20-w500">Выход на работу</p>
+                              <p class="text__subtitle text-s12-h14-w400">Отправьте кандидату инструкции и даты начала
+                                 работы</p>
+                           </div>
+                        </div>
+                     </div>
+                     <img class="popup__response-close" src="images/popup__response/close-popup.svg" alt="close">
+                  </div>
+
+                  <div class="popup__response-info">
+                     <div class="title__select">
+                        <div class="select__header">
+                           <div class="select__current"></div>
+                           <img class="select__arrow" src="images/work__summary/select__arrow.svg" alt="arrow">
+                        </div>
+                        <div class="select__body">
+                           <div class="select__item" data-value="office_interview">
+                              <div class="images">
+                                 <img src="images/popup__response/item-2.svg" alt="images">
+                              </div>
+                              <div class="text">
+                                 <p class="text__title text-s14-h20-w500">Интервью в офисе</p>
+                                 <p class="text__subtitle text-s12-h14-w400">Пригласите кандидата на очное
+                                    собеседование
+                                 </p>
+                              </div>
+                           </div>
+                           <div class="select__item" data-value="test">
+                              <div class="images">
+                                 <img src="images/popup__response/item-4.svg" alt="images">
+                              </div>
+                              <div class="text">
+                                 <p class="text__title text-s14-h20-w500">Тестовое задание</p>
+                                 <p class="text__subtitle text-s12-h14-w400">Предложите кандидату подтвердить свои
+                                    навыки
+                                 </p>
+                              </div>
+                           </div>
+                           <div class="select__item" data-value="exit_to_work">
+                              <div class="images">
+                                 <img src="images/popup__response/item-6.svg" alt="images">
+                              </div>
+                              <div class="text">
+                                 <p class="text__title text-s14-h20-w500">Выход на работу</p>
+                                 <p class="text__subtitle text-s12-h14-w400">Отправьте кандидату инструкции и даты
+                                    начала работы</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="popup__response-info-wrapper">
+
+                        <div class="vacancies__select">
+                           <p class="vacancies__select-title text-s14-h20-w500">Выберите вакансию</p>
+                           <div class="select__header text-s14-h20-w400">
+                              <div class="select__current">
+                              </div>
+                              <img class="select__arrow" src="images/work__summary/select__arrow.svg" alt="arrow">
+                           </div>
+                           <div class="select__body text-s14-h20-w400">
+                              <div class="select__item" data-value="1">
+                                 <p>Монтажник</p>
+                              </div>
+                              <div class="select__item" data-value="2">
+                                 <p>Высотник</p>
+                              </div>
+                              <div class="select__item" data-value="3">
+                                 <p>Разнорабочий</p>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="address__select">
+                           <p class="address__select-title text-s14-h20-w500">Укажите адрес офиса</p>
+                           <div class="select__header text-s14-h20-w400">
+                              <div class="select__current">
+                              </div>
+                              <img class="select__arrow" src="images/work__summary/select__arrow.svg" alt="arrow">
+                           </div>
+                           <div class="select__body text-s14-h20-w400">
+                              <div class="select__item" data-value="1">
+                                 <p>фывфыв</p>
+                              </div>
+                              <div class="select__item" data-value="2">
+                                 <p>фывфыв</p>
+                              </div>
+                              <div class="select__item" data-value="3">
+                                 <p>sdfgvdfbdfvbdf</p>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="test__select">
+                           <p class="test__select-title text-s14-h20-w500">Тестовое задание / анкета</p>
+                           <div class="select__header text-s14-h20-w400">
+                              <div class="select__current">
+                              </div>
+                              <img class="select__arrow" src="images/work__summary/select__arrow.svg" alt="arrow">
+                           </div>
+                           <div class="select__body text-s14-h20-w400">
+                              <div class="select__item" data-value="1">
+                                 <p>сделать что то одно</p>
+                              </div>
+                              <div class="select__item" data-value="2">
+                                 <p>или другое</p>
+                              </div>
+                              <div class="select__item" data-value="3">
+                                 <p>ла ла ла</p>
+                              </div>
+                           </div>
+                           <div class="test__new text-s12-h14-w400">+ Создать новое</div>
+                        </div>
+
+                        <div class="date">
+                           <p class="date__title text-s14-h20-w500">Укажите период или точную дату</p>
+                           <div class="date__button">
+                              <button class="date__range range">Период</button>
+                              <button class="date__exact exact">Точное</button>
+                              <span class="date__slide"></span>
+                           </div>
+                           <span class="date__input text-s14-h20-w400" name="daterange">Выбранная дата</span>
+                           <input type="hidden" class="date__input-hidden">
+                           <p class="date__description description text-s12-h14-w400">Кандидат сможет выбрать подходящий
+                              ему день из
+                              заданного периода
+                           </p>
+                        </div>
+
+                        <div class="time">
+                           <p class="time__title text-s14-h20-w500">Укажите доступное время <span
+                                 class="text-s12-h14-w400">(GMT+3)</span></p>
+                           <div class="time__button">
+                              <button class="time__range range">Диапазон</button>
+                              <button class="time__exact exact">Точное</button>
+                              <span class="time__slide"></span>
+                           </div>
+                           <div class="time__input text-s12-h14-w400">
+                              <div class="time__input-1">
+                                 <p class="time__input-plaseholder">с</p>
+                                 <input type="time" value="08:00" name="appt-time">
+                              </div>
+                              <div class="time__input-2">
+                                 <p class="time__input-plaseholder">до</p>
+                                 <input type="time" value="00:00" name="appt-time">
+                              </div>
+                              <div class="time__select ">
+                                 <div class="select__header text-s14-h20-w400">
+                                    <div class="select__current">
+                                       <div class="select__item" data-value="">
+                                          <p>Длительность</p>
+                                       </div>
+                                    </div>
+                                    <img class="select__arrow" src="images/work__summary/select__arrow.svg" alt="arrow">
+                                 </div>
+                                 <div class="select__body text-s14-h20-w400">
+                                    <div class="select__item" data-value="15">
+                                       <p>15 минут</p>
+                                    </div>
+                                    <div class="select__item" data-value="30">
+                                       <p>30 минут</p>
+                                    </div>
+                                    <div class="select__item" data-value="45">
+                                       <p>45 минут</p>
+                                    </div>
+                                    <div class="select__item" data-value="60">
+                                       <p>60 минут</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <label class="time__checkbox checkbox">
+                              <input type="checkbox">
+                              <span></span>
+                              <p class="text-s14-h20-w400" data-value="all__day">Весь день</p>
+                           </label>
+                           <p class="time__description description text-s12-h14-w400">Кандидат сможет выбрать подходящее
+                              ему время
+                              из заданного временного диапазона с указанным интервалом</p>
+                        </div>
+
+                        <div class="message">
+                           <p class="message__title text-s14-h20-w500">Напишите сообщение кандидату</p>
+                           <textarea name="text"
+                              placeholder="Наша компания приглашает Вас пройти  Видеособеседование. Выберите подходящую Вам дату и время"></textarea>
+                        </div>
+
+                        <div class="help">
+                           <img src="images/popup__response/help__icon.svg" alt="help">
+                           <p class="text-s12-h14-w400">Подробнее о сервисе</p>
+                        </div>
+
+                        <div class="popup__response-info-btn">
+                           <button class="cancel">Отмена</button>
+                           <button class="submit">Отправить приглашение</button>
+                        </div>
+                     </div>
+                     <img class="popup__response-info-close" src="images/popup__response/close-popup.svg" alt="close">
+                  </div>
+
+                  <div class="popup__new-test">
+                     <h4 class="text-s22-h28-w500">Создать тестовое задание</h4>
+                     <input type="text" class="new__test-name text-s14-h20-w400" placeholder="Название">
+                     <textarea type="text" class="new__test-description text-s14-h20-w400"
+                        placeholder="Описание. Задайте условия, требования, опишите пожелания"></textarea>
+                     <h5 class="text-s16-h22-w500">Ссылка на материалы к заданию</h5>
+                     <input type="text" class="new__test-link text-s14-h20-w400" placeholder="http://">
+                     <div class="new__test-wrapper">
+                        <div class="inner">
+                           <h5 class="text-s16-h22-w500">Результат выполненного задания</h5>
+                           <input type="text" class="new__test-result text-s14-h20-w400"
+                              placeholder="Пример: прислать ссылкой на проект">
+                        </div>
+                        <div class="inner">
+                           <h5 class="text-s16-h22-w500">В каком формате нужен результат</h5>
+                           <input type="text" class="new__test-format text-s14-h20-w400"
+                              placeholder="Пример: jpeg картинка">
+                        </div>
+                     </div>
+                     <form class="new__test-load" method="post" enctype="multipart/form-data" action="">
+                        <input class="new__test-load-input" id="file-input" type="file" name="file" multiple
+                           accept=".doc, .docx, .eps, .jpg, .pdf, .png, .rar, .svg, .txt, .xls, .xlsx, .zip">
+                        <label class="new__test-load-label" id="dragdrop" for="file-input">
+                           <img src="images/popup__response/load__icon.svg">
+                           <p class="text-s16-h22-w500">Перетащите файлы в эту область или нажмите</p>
+                           <p class="text-s12-h14-w400">Максимальный размер файла: 10mb</p>
+                        </label>
+                     </form>
+                     <div class="new__test-submit">
+                        <div class="new__test-submit-preview" id="files"></div>
+                        <button class="new__test-submit-btn" type="submit">Сохранить</button>
+                     </div>
+                     <img class="popup__new-test-close" src="images/popup__response/close-popup.svg" alt="close">
+                  </div>
+
+                  <div class="popup__response-sent">
+                     <div class="sent__info">
+                        <img src="images/popup__response/success__icon.svg" alt="success">
+                        <h4 class="text-s22-h28-w500">Приглашение отправлено!</h4>
+                        <p class="text-s14-h20-w400">Как только кандидат его примет, вам придёт уведомление</p>
+                     </div>
+                     <div class="sent__info-test">
+                        <img src="images/popup__response/success__icon.svg" alt="success">
+                        <h4 class="text-s22-h28-w500">Тестовое задание отправлено!</h4>
+                     </div>
+                     <div class="sent__candidate">
+                        <h6 class="title text-s14-h20-w500">Резюме кандидата</h6>
+                        <a href="#" class="item">
+                           <div class="item__image">
+                              <img src="./images/2.jpg" alt="image">
+                           </div>
+                           <div class="item__info">
+                              <h6 class="item__info-name text-s16-h22-w400">Комкова Екатерина</h6>
+                              <p class="item__info-vacancy text-s14-h20-w500">Костюмер</p>
+                              <p class="item__info-salary text-s14-h20-w400">110 000 ₽</p>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="sent__vacancy">
+                        <h6 class="title text-s14-h20-w500">Предложенная вакансия</h6>
+                        <a href="#" class="item">
+                           <div class="item__image">
+                              <img src="./images/2.jpg" alt="image">
+                           </div>
+                           <div class="item__info">
+                              <h6 class="item__info-name text-s16-h22-w400">Комкова Екатерина</h6>
+                              <p class="item__info-salary text-s14-h20-w400">110 000 ₽</p>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="sent__date">
+                        <h6 class="text-s14-h20-w400">Предложенные даты и время</h6>
+                        <p class="text-s16-h22-w400">8 марта — 14 марта, с 14:00 по 20:00</p>
+                     </div>
+                     <div class="sent__address">
+                        <h6 class="text-s14-h20-w400">Адрес офиса</h6>
+                        <p class="text-s16-h22-w400">Москва, улица Садовая, дом 23</p>
+                     </div>
+                     <img class="popup__response-sent-close" src="images/popup__response/close-popup.svg" alt="close">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <div class="filter__background">
+   </div>
+   <div class="filter__show">
+      <div class="filter__show-open">
+         <svg width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+               d="M3.64188 3.88402C4.02055 5.04506 5.11206 5.88402 6.39951 5.88402C7.68697 5.88402 8.77847 5.04506 9.15715 3.88401C11.9046 3.88401 14.6521 3.88401 17.3995 3.88401C17.8966 3.88401 18.2995 3.48107 18.2995 2.98401C18.2995 2.48696 17.8966 2.08401 17.3995 2.08401C14.6521 2.08401 11.9046 2.08401 9.15715 2.08401C9.14743 2.05365 9.16044 2.09411 9.15715 2.08401C8.77847 0.922974 7.68697 0.0840149 6.39951 0.0840149C5.11206 0.0840149 4.02055 0.922974 3.64188 2.08401C2.89442 2.08401 2.14697 2.08401 1.39951 2.08401C0.902455 2.08401 0.499512 2.48696 0.499512 2.98401C0.499512 3.48107 0.902455 3.88401 1.39951 3.88401C2.14697 3.88401 2.89442 3.88401 3.64188 3.88402ZM6.39951 1.88401C5.792 1.88401 5.29951 2.3765 5.29951 2.98401C5.29951 3.59153 5.792 4.08401 6.39951 4.08401C7.00702 4.08401 7.49951 3.59153 7.49951 2.98401C7.49951 2.3765 7.00702 1.88401 6.39951 1.88401Z"
+               fill="#606483" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+               d="M0.499512 10.984C0.499512 10.487 0.902455 10.084 1.39951 10.084C4.14697 10.084 6.89442 10.084 9.64188 10.084C10.0206 8.92297 11.1121 8.08401 12.3995 8.08401C13.687 8.08401 14.7785 8.92297 15.1571 10.084C15.1571 10.084 16.8781 10.084 17.3995 10.084C17.8966 10.084 18.2995 10.487 18.2995 10.984C18.2995 11.4811 17.8966 11.884 17.3995 11.884C17.1773 11.884 15.1571 11.884 15.1571 11.884C14.7785 13.0451 13.687 13.884 12.3995 13.884C11.1121 13.884 10.0206 13.0451 9.64188 11.884C6.89442 11.884 4.14697 11.884 1.39951 11.884C0.902455 11.884 0.499512 11.4811 0.499512 10.984ZM11.2995 10.984C11.2995 10.3765 11.792 9.88402 12.3995 9.88402C13.007 9.88402 13.4995 10.3765 13.4995 10.984C13.4995 11.5915 13.007 12.084 12.3995 12.084C11.792 12.084 11.2995 11.5915 11.2995 10.984Z"
+               fill="#606483" />
+         </svg>
+         <p class="text-s14-h20-w400">Фильтры</p>
+      </div>
+      <div class="filter__show-close">
+         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+               d="M17.1447 2.85526C17.3816 3.09211 17.5 3.38816 17.5 3.74342C17.5 4.09869 17.3816 4.39474 17.1447 4.63158L11.7763 10L17.1447 15.3684C17.3816 15.6053 17.5 15.9013 17.5 16.2566C17.5 16.6118 17.3816 16.9079 17.1447 17.1447C16.9079 17.3816 16.6118 17.5 16.2566 17.5C15.9013 17.5 15.6053 17.3816 15.3684 17.1447L10 11.7763L4.63158 17.1447C4.39474 17.3816 4.09869 17.5 3.74342 17.5C3.38816 17.5 3.09211 17.3816 2.85526 17.1447C2.61842 16.9079 2.5 16.6118 2.5 16.2566C2.5 15.9013 2.61842 15.6053 2.85526 15.3684L8.22368 10L2.85526 4.63158C2.61842 4.39474 2.5 4.09869 2.5 3.74342C2.5 3.38816 2.61842 3.09211 2.85526 2.85526C3.09211 2.61842 3.38816 2.5 3.74342 2.5C4.09869 2.5 4.39474 2.61842 4.63158 2.85526L10 8.22368L15.3684 2.85526C15.6053 2.61842 15.9013 2.5 16.2566 2.5C16.6118 2.5 16.9079 2.61842 17.1447 2.85526Z"
+               fill="#606483" />
+         </svg>
+         <p class="text-s14-h20-w400">Закрыть</p>
+      </div>
+   </div>
+
+
+   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"></script>
+   <script src="js/slick.min.js"></script>
+   <script src="js/moment.js"></script>
+   <script src="js/datarangepicker.js"></script>
+   <script src="js/script.js"></script>
+   <script src="js/script-filter.js"></script>
+   <script src="js/script-popup-response.js"></script>
+</body>
+
+</html>
